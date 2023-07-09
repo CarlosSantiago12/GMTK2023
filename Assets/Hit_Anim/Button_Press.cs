@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//This button is for testing purposes.
+
+//It makes the fight scenes go away when they appear
 public class Button_Press : MonoBehaviour
 {
     public bool canContinue;
@@ -13,7 +17,7 @@ public class Button_Press : MonoBehaviour
 }
    public IEnumerator OnButtonPressCoroutine()
    {
-
+        Debug.Log("Still working");
       canContinue = true;
       yield return new WaitForSeconds(delayTime);
       canContinue = false;
